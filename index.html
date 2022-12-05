@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Page-Enter" content="blendTrans(Duration=.1)" />
+    <meta http-equiv="Page-Exit" content="blendTrans(Duration=.1)" />
+
+    <link rel="stylesheet" href="style.css">
+
+    
+    <!--google fonts
+        font-family: 'Poppins', sans-serif; regular bold
+        font-family: 'Zen Dots', cursive;
+    -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Zen+Dots&display=swap" rel="stylesheet">
+    
+    <!-- Leaflet map -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.2/dist/leaflet.css" integrity="sha256-sA+zWATbFveLLNqWO2gtiw3HL/lh1giY/Inf1BJ0z14=" crossorigin=""/>
+    <!-- Make sure you put this AFTER Leaflet's CSS -->
+    <script src="https://unpkg.com/leaflet@1.9.2/dist/leaflet.js" integrity="sha256-o9N1jGDZrf5tS+Ft4gbIK7mYMipq9lqpVJ91xHSyKhg=" crossorigin=""></script>
+
+
+    <title>frontend test 6</title>
+</head>
+<body>
+
+    <!--navbar-->
+    <section >
+        <hr class="navbar-hr">
+        <div class="navbar">
+            <a class="nav-item nav-item-brand" href="#">
+                <img src="./res/logo.png">
+            </a>
+            <a class="nav-item title" href="#">HomePage</a>
+            <a class="nav-item title" href="#">Deals</a>
+            <a class="nav-item title" href="#">Contact Us</a>
+            <a class="nav-item title" href="#">Bussiness</a>
+        </div>
+    </section>
+    
+
+    <!--banner-->
+    <section>
+        <div class="banner">
+            <h1 class="title">
+                <span class="title">Aston Martin</span>
+                 Works
+            </h1>
+            <p>
+                Your Dream Car Manufacturer. <i>since 1982</i>
+            </p>
+        </div>
+    </section>
+
+    <hr>
+
+    <!--content-->
+    <section>
+        
+        <!--introduction-->
+        <div class="container introduction">
+            <div class="introduction-pictures">
+                <img class="introduction-showcase-1" src="./res/car3.jpg">
+                <img class="introduction-showcase-2" src="./res/car4.jpg">
+                <img class="introduction-showcase-1" src="./res/car6.jpg">
+            </div>
+            <div class="introduction-desc">   
+                <h2 class="title">
+                    VULCAN SLX
+                </h2>
+                <h3>
+                    - Specs & Features -
+                </h3>
+                <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam repudiandae omnis accusantium commodi sapiente sint ducimus tempore perspiciatis sunt excepturi.
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel ratione facilis animi! Libero omnis corporis provident fuga harum debitis temporibus!
+                </p>
+                <ul>
+                    <li>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, eligendi?
+                    </li>
+                    <li>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi debitis fugit voluptas ipsam minus sunt deleniti corporis sequi nam quas!
+                    </li>
+                    <li>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt nulla voluptatem id esse nemo veniam.
+                    </li>
+                    <li>
+                        Lorem ipsum dolor sit amet.
+                    </li>
+                </ul>
+                <button class="btn title">Cry About it Now!</button>
+            </div>
+        </div>
+        
+        <hr>
+    
+        <!--roads-->
+        <div class="container">
+            <div class="roads">
+
+                <div class="choices">
+                    <div class="choice">
+                        <img class="choice-img" src="./res/car1.jpg">
+                        <h3 class="title">Elegant</h3>
+                        <p>
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum et commodi facilis quaerat enim distinctio rerum natus vel in provident quasi, vitae molestias eaque dolor temporibus consequuntur aut, laudantium voluptatibus?
+                        </p>
+                    </div>
+                    <div class="choice">
+                        <img class="choice-img" src="./res/car6.jpg">
+                        <h3 class="title">Power</h3>
+                        <p>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus excepturi et nulla illo eum quia delectus dignissimos amet quod deserunt?
+                        </p>
+                    </div>
+                    <div class="choice">
+                        <img class="choice-img" src="./res/car2.jpg">
+                        <h3 class="title">Sharpness</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci corrupti delectus sed quidem est, veritatis eos consectetur nostrum molestias vel totam in explicabo quod libero id praesentium accusamus reiciendis vero dolorum tenetur, beatae magnam odio hic. Quod asperiores consequatur eveniet maxime ipsam. Harum fugit impedit ipsam veritatis et minus accusantium.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="roads-bilboard">
+                    <h3 class="title">
+                        Cops Love Vulcans
+                    </h3>
+                    <p class="roads-bilboard-lead">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa officia, nulla doloremque saepe, repudiandae explicabo eaque neque totam consequatur aperiam enim dolorem minima quam dolores sint magni molestiae libero eligendi!
+                    </p>
+                    <p class="roads-bilboard-text">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis, soluta.
+                    </p>
+                    <button class="btn title">Buy Now!</button>
+                </div>
+            </div>
+            
+        </div>
+
+        <hr>
+        
+        <!--aboutus-->
+        <div class="container">
+            <div class="aboutus">
+
+                <div>
+                    <img src="./res/logo.png">
+                </div>
+                <div>
+                    <h3>- History -</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, voluptatem
+                    </p>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore perferendis animi iure aliquid aperiam a libero, nam esse. Minus nulla delectus enim nisi excepturi mollitia blanditiis in aperiam, earum ex laborum iste vel repellat. Culpa ex facilis ad porro nostrum quos necessitatibus natus recusandae, pariatur, ipsam minus corporis non nihil.
+                    </p>
+                </div>
+
+            </div>
+        </div>  
+    </section>
+
+    
+
+    <!--footer-->
+    <section>
+        <div class="container">
+            <div class="footer">
+                <div class="contacts">
+                    <ul>
+                        <li>
+                            Contact: <span>+0123456789</span>
+                        </li>
+                        <li>
+                            Email: <span>contact@astonmartin.com</span>
+                        </li>
+                        <li>
+                            Instagram: <span>@astonmartin</span>
+                        </li>
+                        <li>
+                            Facebook: <span>AstonMartinOfficial</span>
+                        </li>
+                        <li>
+                            Adress: <span>California Something N/A Block 13st</span>
+                        </li>
+                    </ul>
+                </div>
+
+
+                <!--LEAFLET MAP-->
+                <div id="map">
+                    <!-- leaflet map code-->
+                    <script>
+                        const mapData = {
+                            coords: [51.505, -0.09],
+                            zoom: 13,
+                            description: "<center> Place name <br> hello <center>"
+                        };
+                        const map = L.map('map').setView(mapData.coords, mapData.zoom);
+
+                        L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+                        }).addTo(map);
+
+                        L.marker(mapData.coords).addTo(map)
+                            .bindPopup(mapData.description)
+                            .openPopup();
+                    </script>
+                </div>
+
+            </div>
+            <p class="copyright">Copyright © 2022 <span class="title">ASTON MARTIN</span></p>
+        </div>
+    </section>
+    <hr>
+
+
+
+
+</body>
+</html>
