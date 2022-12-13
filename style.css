@@ -9,6 +9,15 @@
     transition: .2s;
 
 }
+@font-face { 
+    font-family: "Poppins";  
+    src: url("./res/fonts/Poppins/Poppins-Regular.ttf"); 
+}
+@font-face { 
+    font-family: "Zen Dots";  
+    src: url("./res/fonts/Zen_Dots/ZenDots-Regular.ttf"); 
+}
+
 
 .p-0{
     padding: 0;
@@ -63,17 +72,23 @@ a{
 .nav-item:hover{
     text-shadow: var(--primary-light) 0.1rem 0.1rem 0rem;
 }
+.hamburger{
+    margin-right: 1rem;
+    display: none;
+}
 
 .nav-item-brand{
     flex-grow: 1;
     align-items: center;
     justify-content: start;
+    overflow: visible;
 }
 .nav-item-brand img{
     filter: drop-shadow(black 0.1rem 0.2rem 0.2rem);
     height: 80%;
     object-fit: contain;
     object-position: center;
+    overflow: visible;
 }
 
 .title{
@@ -112,6 +127,8 @@ a{
     background-color: var(--primary-light);
     text-decoration: underline;
     text-decoration-color: white;
+    color: black;
+
 }
 .banner p {
     color: white;
@@ -359,5 +376,25 @@ hr{
     border-radius: 1rem;
     box-shadow: black 0 0 1rem;
 }
+
+
+
+@media (max-width: 60rem) {
+    .navbtn{
+        display: none;
+        
+    }
+    .hamburger{
+        display: initial;
+    }
+
+    
+}
+
+
+
+
+
+
 
 
