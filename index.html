@@ -39,6 +39,7 @@
                 const navItemBrand = document.getElementsByClassName("nav-item-brand")[0];
                 const navbar = document.getElementById("navbar");
                 const navbtns = document.querySelectorAll(".navbtn");
+                
                 hamburger.addEventListener("click", ()=>{
                     //get navbar direction
                     const dir = navbar.style.flexDirection;
@@ -46,22 +47,25 @@
 
                     //collapse or expand according to that
                     if(navbarStyle.flexDirection == "column"){
+                
                         navbar.style.flexDirection = "row";
                         navbar.style.height = "3rem";
                         navbtns.forEach(navbtn => {
-                                navbtn.classList.toggle('show');
-                                navbtn.setAttribute('style', 'pointer-events: none');
+                            navbtn.classList.toggle('show');
+                            navbtn.setAttribute('style', 'pointer-events: none');
                         });
                         navItemBrand.setAttribute('style', 'justify-content: start');
+                
                     }else if (navbarStyle.flexDirection == "row"){
+                
                         navbar.style.flexDirection = "column";
                         navbar.style.height = "20rem";
                         navbtns.forEach(navbtn => {
-                                navbtn.classList.toggle('show');
-                                navbtn.setAttribute('style', 'pointer-events: initial');
-                    
+                            navbtn.classList.toggle('show');
+                            navbtn.setAttribute('style', 'pointer-events: initial');
                         });
                         navItemBrand.setAttribute('style', 'justify-content: center');
+                
                     }
 
                 });
