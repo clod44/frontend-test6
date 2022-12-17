@@ -23,15 +23,49 @@
     <!--navbar-->
     <section >
         <hr class="navbar-hr">
-        <div class="navbar">
+        <div id="navbar" class="navbar">
             <a class="nav-item nav-item-brand" href="#">
                 <img src="./res/logo.png">
             </a>
-            <a class="nav-item title navbtn" href="#">HomePage</a>
-            <a class="nav-item title navbtn" href="#">Deals</a>
-            <a class="nav-item title navbtn" href="#">Contact Us</a>
-            <a class="nav-item title navbtn" href="#">Bussiness</a>
-            <a class="nav-item title hamburger" href="#">|||</a>
+            <a class="nav-item title navbtn" href="#homepage">HomePage</a>
+            <a class="nav-item title navbtn" href="#deals">Deals</a>
+            <a class="nav-item title navbtn" href="#contactus">Contact Us</a>
+            <a class="nav-item title navbtn" href="#faq">FAQ</a>
+            <a id="hamburger" class="nav-item title hamburger" href="#">|||</a>
+        
+            <!--collapsable navbar-->
+            <script>
+                const hamburger = document.getElementById("hamburger");
+                const navItemBrand = document.getElementsByClassName("nav-item-brand")[0];
+                const navbar = document.getElementById("navbar");
+                const navbtns = document.querySelectorAll(".navbtn");
+                hamburger.addEventListener("click", ()=>{
+                    //get navbar direction
+                    const dir = navbar.style.flexDirection;
+                    const navbarStyle = window.getComputedStyle(navbar);
+
+                    //collapse or expand according to that
+                    if(navbarStyle.flexDirection == "column"){
+                        navbar.style.flexDirection = "row";
+                        navbar.style.height = "3rem";
+                        navbtns.forEach(navbtn => {
+                                navbtn.classList.toggle('show');
+                                navbtn.setAttribute('style', 'pointer-events: none');
+                        });
+                        navItemBrand.setAttribute('style', 'justify-content: start');
+                    }else if (navbarStyle.flexDirection == "row"){
+                        navbar.style.flexDirection = "column";
+                        navbar.style.height = "20rem";
+                        navbtns.forEach(navbtn => {
+                                navbtn.classList.toggle('show');
+                                navbtn.setAttribute('style', 'pointer-events: initial');
+                    
+                        });
+                        navItemBrand.setAttribute('style', 'justify-content: center');
+                    }
+
+                });
+            </script>
         </div>
     </section>
     
@@ -115,7 +149,7 @@
                         <img class="choice-img" src="./res/car2.jpg">
                         <h3 class="title">Sharpness</h3>
                         <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci corrupti delectus sed quidem est, veritatis eos consectetur nostrum molestias vel totam in explicabo quod libero id praesentium accusamus reiciendis vero dolorum tenetur, beatae magnam odio hic. Quod asperiores consequatur eveniet maxime ipsam. Harum fugit impedit ipsam veritatis et minus accusantium.
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci corrupti delectus sed quidetis et minus accusantium.
                         </p>
                     </div>
                 </div>
